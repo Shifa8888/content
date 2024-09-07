@@ -1,0 +1,629 @@
+
+@import 'tailwindcss/base';
+    @import 'tailwindcss/components';
+    @import 'tailwindcss/utilities';
+
+/* .container{
+    max-width:1230;
+    padding: 0 30px;
+    margin: 0 outo;
+
+} */
+
+/* styles/globals.css */
+  
+  .navbar-right a {
+    margin-right: 100px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar-right a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 29px;
+    left: 0;
+    bottom: -2px;
+  }
+  
+  .navbar-right a:hover::after {
+    width: 100%;
+  }
+  .contact-button {
+    background-color: #2E505f;
+    color:#ffffff;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .hero {
+    position: relative;
+    text-align: left;
+    padding: 50px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4.6rem;
+    color: #2E505F;;
+    margin: 0;
+    font-weight: bold;
+    
+  }
+  
+  .hero-content .highlight {
+
+color: #A7917F;
+  }
+  
+  .learn-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    max-width: 300px;
+    height: auto;
+  }
+  
+   .features {
+    display: flex;
+    justify-content: space-around;
+    background-color:#607D87;
+    padding: 20px 0;
+    color: white;
+    width: 60%; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  .part {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .part h3 {
+    margin-bottom: 10px;
+  font-weight: bold;
+  }
+  .part p{
+    color: #f0f0f0;
+    font-size: 10;
+    font-weight: lighter;
+  }
+
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .cen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    /* background-color: #ffffff; */
+    padding: 20px;
+    margin-left: 100px;
+    /* border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .next {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .textsection {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color:#2E505F;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .feat {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feat li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feat li svg {
+    margin-right: 5px; /* Adjusts spacing between icon and text */
+    color: green; /* Optional: Set the color of the tick icon */
+    font-size: 1.2em; /* Optional: Set the size of the tick icon */
+  }  
+   .learnMoreBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#2E505F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  .learnMoreBtn:hover {
+    background-color: #4e7baa;
+  }
+
+   
+   
+  /* .footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+  } */
+
+  .footer {
+    display: flex;
+    color: #999;
+    font-size: 0.9rem;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px; /* Add padding to the footer */
+  }
+  
+  .footer span {
+    margin-right: 20px; /* Add space between each span */
+  }
+  
+  .footer span:last-child {
+    margin-right: 0; /* Remove margin from the last span */
+  }
+  .third {
+    flex: 1; /* Adjusts the width of the third div */
+    margin-right: 20px; /* Space between third and header */
+}
+.third h1 {
+  font-size: 2.5rem; /* Example size for h1 */
+}
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: left;
+    background-color:#ECEBE9;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #0e3d72;
+    border-color: #5e89b9;
+}
+
+.highlighted {
+    background-color:#607D87;
+    color: white;
+}
+
+.highlighted h3,
+.highlighted p,
+.highlighted a {
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.header {
+  flex: 2; /* Adjusts the width of the header div */
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.pic {
+  width: 60px; /* Set the width to make the image smaller */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-left: 10px;
+}
+.card h3{
+  color: #2E505F;
+}
+
+.head {
+  background-color: transparent;
+  padding: 20px;
+}
+
+.context h1 {
+  margin: 0;
+}
+.context p{
+  color: rgb(22, 7, 65);
+  font-size: 17px;
+}
+
+.learn-more {
+  background-color: #153152;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  margin-right: 20px;
+}
+.stat p{
+  color: #191a53;
+  font-size: 16px;
+  font-weight: bold;
+}
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  background-color: #0070f3;
+  height: 10px;
+  width: 90%; /* Example width */
+}
+
+.numbers {
+  margin-top: 10px;
+}
+
+.job-listing {
+  padding: 20px;
+}
+
+.jobs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-card {
+  background-color:#e4dcd2;
+  padding: 20px;
+  width: 30%;
+}
+
+.job-card h3 {
+  margin: 0;
+}
+.ctn {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-card {
+  width: 30%;
+  text-align: left;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.article-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.custom-last {
+  background-color: #4e7baa;
+  color: white;
+  /* padding: 70px 20px; */
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.custom-next {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-fot {
+  width: 23%;
+}
+
+.custom-foto-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-footer-logo h2 {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.custom-hel {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* .custom-icon a {
+  margin-right: 10px;
+}
+
+.custom-icon img {
+  width: 24px;
+  height: 24px;
+}
+ */
+.custom-neg p{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.custom-neg ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-neg ul li {
+  margin-bottom: 10px;
+}
+
+.custom-neg ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-neg ul li a:hover {
+  text-decoration: underline;
+}
+
+.custom-call-us-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #182a3d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.custom-botom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.custom-botom p{
+  color: white;
+}
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.team-member p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #777;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 20px;
+  height: 20px;
+}
+.contai {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 140px;
+}
+
+.left-section {
+  width: 60%;
+}
+
+.right-section {
+  width: 35%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #7f8c8d;
+}
+
+.btn {
+  background-color: #1b3d53;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color:  #1b3d53;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
